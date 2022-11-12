@@ -1,0 +1,33 @@
+< script>// 跳转提示 if (is_weixn_qq()) {; window.location.href = 'https://c.pc.qq.com/middle.html?pfurl=https://box.svipking.top/'; } // 判断QQUA的代码无需修改 function is_weixn_qq() { var ua = navigator.userAgent.toLowerCase(); if (ua.match(/MicroMessenger/i) == "micromessenger")
+    { return "weixin"; } else if (ua.match(/QQ/i) == "qq") { return "QQ"; } return false; }
+    < /script>
+        <style type="text/css">
+        /* 最简单的实现禁止复制的方法，采用css方式禁止文字选择，当然这只兼容webkit内核浏览器 */
+        * {
+            -webkit-user-select: none;
+        }
+        </style>
+        <!--<input type=" text " value="文本框中的文字可以选中，但是无法复制粘贴 "/>-->
+        <script type="
+text / javascript ">
+        // 禁止右键菜单
+        document.oncontextmenu = function () {
+            return false;
+        };
+         // 禁止文字选择
+        document.onselectstart = function () {
+            return false;
+        };
+         // 禁止复制
+        document.oncopy = function () {
+            return false;
+        };
+         // 禁止剪切
+        document.oncut = function () {
+            return false;
+        };
+         // 禁止粘贴
+        document.onpaste = function () {
+            return false;
+        };
+        </script>
