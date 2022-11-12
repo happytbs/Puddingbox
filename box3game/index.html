@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
+    <title>欢迎来到Box of game!</title>
+
+    <script type="text/javascript">
+        function getDou(number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        }
+
+        function getWeek(week) {
+            var sWeek = null;
+            switch (week) {
+                case 0:
+                    sWeek = '星期日'
+                    break;
+                case 1:
+                    sWeek = '星期一'
+                    break;
+                case 2:
+                    sWeek = '星期二'
+                    break;
+                case 3:
+                    sWeek = '星期三'
+                    break;
+                case 4:
+                    sWeek = '星期四'
+                    break;
+                case 5:
+                    sWeek = '星期五'
+                    break;
+                case 6:
+                    sWeek = '星期六'
+                    break;
+                default:
+                    break;
+            }
+            return ' ' + sWeek;
+        }
+        window.onload = function () {
+            var oDate = document.getElementsByTagName("p")[0];
+            var oTime = document.getElementsByTagName("p")[1];
+
+            function tick() {
+                var date = new Date();
+                var sDate = null;
+                var sTime = null;
+                var hours = date.getHours();
+                if (hours > 12) {
+                    hours %= 12;
+                    sTime = '下午 ';
+                } else {
+                    sTime = '上午 ';
+                }
+                sTime += getDou(hours) + ':' + getDou(date.getMinutes()) + ':' + getDou(date.getSeconds());
+                sTime += getWeek(date.getUTCDay());
+                oTime.innerHTML = sTime;
+
+                sDate = date.getUTCFullYear() + "年";
+                if (date.getUTCMonth() < 9) {
+                    sDate += '0' + (date.getUTCMonth() + 1) + "月";
+                } else {
+                    sDate += (date.getUTCMonth() + 1) + "月";
+                }
+                sDate += date.getUTCDate() + "日";
+                oDate.innerHTML = sDate;
+            }
+
+            setInterval(tick, 1000);
+            tick();
+        }
+    </script>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+    <style type="text/css">
+        /* body {
+                width: 800px;
+                height: 500px;
+                vertical-align: middle;
+                display: table-cell;
+            } */
+
+        .date {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+
+        .time {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <p class="date">
+                日期
+            </p>
+            <p class="time">
+                时间
+            </p>
+        </div>
+</body>
+
+</html>
+
+<b>分类标签</b>
+<br>
+<br>
+<a href="./box%20of%20PK.html">
+
+    <button>对战类</button>
+
+</a>
+<b>(3)</b>
+<br>
+<b>联机去，队友和对手，看看哪个牛。</b>
+<br>
+<br>
+<a href="./box%20of%20mm.html">
+
+    <button>模拟类</button>
+
+</a>
+<b>(1)</b>
+<br>
+<b>在城市经济危机下体验生存，十分真实的城市生活模拟，有地铁、轻轨、BRT，可以开车、工作、到宇宙。</b>
+<br>
+<br>
+<a href="./box%20of%20find.html">
+
+    <button>寻宝类</button>
+
+</a>
+<b>(2)</b>
+<br>
+<b>我的宝藏藏很深，你要忍一下（</b>
+<br>
+<br>
+<a href="./box%20of%20js.html">
+
+    <button>竞速类</button>
+</a>
+<b>(1)
+</b>
+<br>
+<b>漂移、飞跃，真的，你的车无所不能。</b>
+<br>
+<br>
+<a href="https://box3.codemao.cn/e/9b75a17280b63b2c9ef8">
+
+    <button>[纯建筑]晨光微暖</button>
+</a>
+<b>本地图无管理员</b>
+<br>
+<b>没啥，就欣赏建筑吧。</b>
+<br>
+<br>
+<a href="https://box3.codemao.cn/e/8e7420e032faeb171fa6">
+
+    <button>[博物馆]box3博物馆</button>
+</a>
+<b>本地图无管理员</b>
+<br>
+<b>如果你想知道box3是个啥，来呗~</b>
+<br>
+<br>
+<b>付费地图</b>
+<br>
+<br>
+<a href="">
+
+    <button>魔法の四色旋风</button>
+
+</a>
+<br>
+<b>公元oer年，魔法信徒和科技信徒展开了大战，最后，科技战胜了魔法，剩余的魔法信徒，聚在一起，将一块土地升至高空，形成四大阵营,不断相互切磋，准备将来再战科技...
+    -----------------------------------------
+    玩家在竞技场上空出生，根据自己的喜好选择适合的学院
+
+    在竞技场中打斗，通过打斗提升等级、获取新技能、获取钱币
+
+    为保护萌新，维持竞赛公平性，竞技场被分为4部分：
+
+    lv1-lv5/lv6-1v10/lv11-lv15/lv16-lv20
+
+    (出生即获得1000元，进入一次竞技场消费200元)
+
+    左键发射普通技能，右键信息面板(魔法阵,其他正在开发,尽请期待)
+
+    下面详细介绍各个学院技能(普攻)：
+
+    冰：造成伤害并减缓对方一些移动速度
+
+    火：造成一段时间内持续伤害
+
+    电：造成伤害并有概率暴击
+
+    (辅助)药：一次不能携带超过3瓶
+
+    BGM:Sunburst</b>
+<br>
+<br>
+<br>
+<br>
+
+<a href="https://box.svipking.top/" target="_blank">
+
+    <button>返回布丁工具箱</button>
+
+</a>
+<br>
+<br>
+<br>
+<br>
+<b>本站创建、代码：蓝猫</b>
+<b>主站维护：土拨鼠</b>
+<br>
+<b>主站：布丁工具箱（土拨鼠）</b>
+<div>

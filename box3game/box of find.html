@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
+    <title>Find - Game of box</title>
+    <script type="text/javascript">
+        function getDou(number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        }
+
+        function getWeek(week) {
+            var sWeek = null;
+            switch (week) {
+                case 0:
+                    sWeek = '星期日'
+                    break;
+                case 1:
+                    sWeek = '星期一'
+                    break;
+                case 2:
+                    sWeek = '星期二'
+                    break;
+                case 3:
+                    sWeek = '星期三'
+                    break;
+                case 4:
+                    sWeek = '星期四'
+                    break;
+                case 5:
+                    sWeek = '星期五'
+                    break;
+                case 6:
+                    sWeek = '星期六'
+                    break;
+                default:
+                    break;
+            }
+            return ' ' + sWeek;
+        }
+        window.onload = function () {
+            var oDate = document.getElementsByTagName("p")[0];
+            var oTime = document.getElementsByTagName("p")[1];
+
+            function tick() {
+                var date = new Date();
+                var sDate = null;
+                var sTime = null;
+                var hours = date.getHours();
+                if (hours > 12) {
+                    hours %= 12;
+                    sTime = '下午 ';
+                } else {
+                    sTime = '上午 ';
+                }
+                sTime += getDou(hours) + ':' + getDou(date.getMinutes()) + ':' + getDou(date.getSeconds());
+                sTime += getWeek(date.getUTCDay());
+                oTime.innerHTML = sTime;
+
+                sDate = date.getUTCFullYear() + "年";
+                if (date.getUTCMonth() < 9) {
+                    sDate += '0' + (date.getUTCMonth() + 1) + "月";
+                } else {
+                    sDate += (date.getUTCMonth() + 1) + "月";
+                }
+                sDate += date.getUTCDate() + "日";
+                oDate.innerHTML = sDate;
+            }
+
+            setInterval(tick, 1000);
+            tick();
+        }
+    </script>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+    <style type="text/css">
+        .date {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+
+        .time {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <p class="date">
+                日期
+            </p>
+            <p class="time">
+                时间
+            </p>
+        </div>
+</body>
+
+</html>
+
+<b>免费地图</b>
+<br>
+<br>
+<a href="https://box3.codemao.cn/e/baaa46d0e235e1daa22b">
+
+    <button>冰火展览馆</button>
+
+</a>
+<b>本图无管理员</b>
+<br>
+<b>10个宝藏，2层楼，3个展厅，看看谁能一览无余，满配而归。</b>
+<br>
+<br>
+<a href="https://box3.codemao.cn/e/10527c2f046f29ae6bf3">
+
+    <button>（招管理员）幻乐之城</button>
+</a>
+<b>本地图正在招募管理员</b>
+<br>
+<b>寻找密道，到达终点，探寻这座城市，可以踢足球、开车，高空观景。</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="https://box.svipking.top/box3game/">
+
+    <button>返回</button>
+
+</a>
+</div>
+
+</html>
