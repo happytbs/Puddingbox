@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <link rel="icon" href="/tb.png" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌小恐龙！ - 布丁工具箱</title>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-31VWX8D6QS"></script> -->
+    <!-- <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-31VWX8D6QS');
+	</script> -->
+
+    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        .container {
+            width: 60%;
+            margin: 4% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 55px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        a {
+            color: #20a53a
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>谷歌小恐龙作弊代码大全</h1>
+        <p>当前支持 自动跳跃 自动加分数 自动极速奔跑</p>
+        <p>&nbsp;</p>
+        <div style="text-align: center;"><span id="btn" data-clipboard-text="Runner.instance_.gameOver=function(){}">复制无敌代码（可以打开或关闭并且默认无声音）</span></div>
+        <div id="show" style="display: none;text-align: center;">已复制,赶紧去谷歌小恐龙试试吧！</div>
+        <p>&nbsp;</p>
+        <div style="text-align: center;"><span id="btn1" data-clipboard-text="Runner.instance_.setSpeed(299792458)">复制极速快跑代码</span></div>
+        <div id="show1" style="display: none;text-align: center;">已复制,赶紧去谷歌小恐龙试试吧！</div>
+        <script>
+            var btn = document.getElementById('btn');
+            var clipboard = new Clipboard(btn);
+            clipboard.on('success', function (e) {
+                $('#show').slideDown().delay(1500).slideUp(300);
+                console.log(e);
+            });
+            clipboard.on('error', function (e) {
+                $('#show').slideDown().delay(1500).slideUp(300);
+                console.log(e);
+            });
+        </script>
+        <script>
+            var btn = document.getElementById('btn1');
+            var clipboard = new Clipboard(btn);
+            clipboard.on('success', function (e) {
+                $('#show').slideDown().delay(1500).slideUp(300);
+                console.log(e);
+            });
+            clipboard.on('error', function (e) {
+                $('#show').slideDown().delay(1500).slideUp(300);
+                console.log(e);
+            });
+        </script>
+        <p>&nbsp;</p>
+
+        <h5 style="text-align: center;">©2020-2022 布丁工具箱网页开发团队版权所有！</h5>
+    </div>
+
+</body>
+
+</html>
