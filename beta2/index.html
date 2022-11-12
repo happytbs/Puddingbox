@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>稳定版 - 布丁工具箱</title>
+	<link rel="icon" href="/tb.png" type="image/x-icon">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="full-screen" content="yes">
+	<meta name="browsermode" content="application">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="x5-page-mode" content="app">
+
+	<style type="text/css">
+		* {
+			-webkit-user-select: none;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		document.onselectstart = function () { return false; };
+		document.oncopy = function () { return false; };
+		document.oncut = function () { return false; };
+		document.onpaste = function () { return false; };
+	</script>
+
+	<script>
+		console.log("感谢使用稳定版布丁工具箱！ 欢迎加入本网站交流QQ群反馈问题和查看更新动态: 666396302 ")
+	</script>
+
+	<style>
+		.container {
+			width: 60%;
+			margin: 4% auto 0;
+			background-color: #f0f0f0;
+			padding: 2% 5%;
+			border-radius: 55px
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		ul li {
+			line-height: 2.3
+		}
+
+		a {
+			color: #20a53a
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+
+		/* 设置css伪类 */
+		body::-webkit-scrollbar {
+			width: 0px;
+		}
+
+		/* body::-webkit-scrollbar-track {
+			background: #c9d8cd;
+			border-radius: 2px;
+		}
+
+		body::-webkit-scrollbar-thumb {
+			background: #80d8ff;
+			border-radius: 10px;
+		}
+
+		body::-webkit-scrollbar-thumb:hover {
+			background: #d0f1ff;
+		}
+
+		body::-webkit-scrollbar-corner {
+			background: #179a16;
+		} */
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>稳定版 - 布丁工具箱</h1>
+		<input type="button" name="Submit" value="返回" onclick="javascript:history.back()" />
+		<p>欢迎来到布丁工具箱稳定版！</p>
+		<p>&nbsp;</p>
+		<p title="tips：没错Win7版本悄悄上线拉！~">当前版本&nbsp;&nbsp;<strong style="color:#f3b90c">布丁工具箱 - Beta 2版本
+				(稳定版,Win7专用)</strong></p>
+		<p>公告 <strong style="color:#FF8C69">新稳定版简化了ui，减少浏览器加载需要的文件，去除滚动条防止占用空间(Chromium内核)</strong></p>
+		<p style="text-align: center;"><a href="https://box.svipking.top/" title="回到首页的版本"
+				style="text-decoration:none">正式版</a>&nbsp;&nbsp;<a href="https://box.svipking.top/new-gxrz.html"
+				title="工具箱的更新日志，记录每一次版本变革更新了神马功能" style="text-decoration:none">更新日志</a>
+		</p>
+
+		<h4>&nbsp;&nbsp;所有项目导航：</h4>
+		<p>&nbsp;</p>
+
+		<p style="text-align: center;"><a href="https://box.svipking.top/beta2/bdzyz" title="新版本的资源站，加入了您一般常用的一些软件下载资源"
+				style="color:#3399ff">布丁资源站[全新改版]</a></p>
+
+		<p style="text-align: center;"><a href="https://box.svipking.top/qmqsy/" title="新版起始页,更换了域名 是一个无广告，不追踪的起始页！"
+				style="color:#3399ff">青芒起始页 - 简单清爽</a></p>
+
+		<p style="text-align: center;"><a href="https://box.svipking.top/bdzyz/xdh.html"
+				title="由upzyxQAQ用户投稿，为您常用的搜索引擎添加快速访问的网站" style="color:#3399ff">搜索引擎直达</a></p>
+
+		<p style="text-align: center;"><a href="https://box.svipking.top/box3game/" title="[合作]由蓝猫开发投稿到本站，为编程猫服务"
+				style="color:#3399ff">box3游戏推荐</a></p>
+
+		<!--<p style="text-align: center;"><a href="https://xzz.svipking.top" target="_blank" title="【专门为编程猫服务】一个公益的可以接入大家作品的下载站，方便大家开源、学习、提意见等。">布丁下载站</a></p>-->
+		<!--下载站未知原因无法访问-->
+		<!-- <p style="text-align: center;"><a href="http://www.piggyp.cn" title="[合作网站]@一条小猪猪 开发的便宜云主机平台，价格还算实惠" style="text-decoration:none">小猪云服务平台</a></p> -->
+
+		<p style="text-align: center;"><a href="https://box.svipking.top/china-aip" title="由 @Longding 修改后投稿到本站"
+				style="color:#3399ff">航图查看器[PDF]</a></p>
+
+
+		</strong>
+		<p>&nbsp;</p>
+
+		<strong>
+			<center>
+				<span id="showsectime" style="color:#1e1e1e;"></span>
+				<script type="text/javascript">
+					function NewDate(str) {
+						str = str.split('-');
+						var date = new Date();
+						date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+						date.setUTCHours(0, 0, 0, 0);
+						return date;
+					}
+					function showsectime() {
+						var birthDay = NewDate("2021-2-10");
+						var today = new Date();
+						var timeold = today.getTime() - birthDay.getTime();
+						var sectimeold = timeold / 1000
+						var secondsold = Math.floor(sectimeold);
+						var msPerDay = 24 * 60 * 60 * 1000; var e_daysold = timeold / msPerDay;
+						var daysold = Math.floor(e_daysold);
+						var e_hrsold = (daysold - e_daysold) * -24;
+						var hrsold = Math.floor(e_hrsold);
+						var e_minsold = (hrsold - e_hrsold) * -60;
+						var minsold = Math.floor((hrsold - e_hrsold) * -60); var seconds = Math.floor((minsold - e_minsold) * -60).toString();
+						document.getElementById("showsectime").innerHTML = "Beta 2版本已悄悄的运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+						setTimeout(showsectime, 1000);
+					} showsectime();
+				</script>
+			</center>
+		</strong>
+		<!-- <p>&nbsp</p> -->
+		<div id="music" key="6145da473bbb3" api="http://www.xn--irrs8t.xyz"></div>
+		<script id="xplayer" src="http://www.xn--irrs8t.xyz/api/PlayerJs/id/6145da473bbb3"></script>
+
+		<h5 style="text-align: center;">©2020-2021 布丁工具箱网页开发团队版权所有！</h5>
+	</div>
+
+</body>
+
+</html>
